@@ -1,0 +1,30 @@
+@import "addons.scss";
+@import "helloworld.scss";
+
+/* This file prefixes all rules with the theme name to avoid causing conflicts with other themes. */
+/* The actual styles should be defined in helloworld.scss */
+.helloworld {
+  @include addons;
+  @include helloworld;
+}
+.v-formlayout-withborders .v-formlayout-row .v-formlayout-contentcell {
+   border: solid 1px black;
+   border-bottom: none;
+   padding: 3px;
+}
+.v-formlayout-withborders .v-formlayout-lastrow .v-formlayout-contentcell {
+   border-bottom: solid 1px black;
+}
+
+/* Position icon right of the link caption. */
+.icon-after-caption {
+    direction: rtl;
+}
+/* Add some padding around the icon. */
+.icon-after-caption .v-icon {
+    padding: 0 3px;
+}
+.v-textfield-dashing {
+    border:     thin dashed;
+    background: white; /* Has shading image by default */
+}
